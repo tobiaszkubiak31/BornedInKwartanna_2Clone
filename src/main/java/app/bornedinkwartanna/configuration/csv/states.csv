@@ -1,0 +1,7 @@
+name,groceries,preparedFood,prescriptionDrug,nonPrescriptionDrug,clothing,intangibles,logistics
+Alabama,0.4,0.4,0.0,0.4,0.04,0.4,0.1
+Alaska,0.0,0.0, 0.0, 0.0, 0.0,0.0,0.2
+California,0.0,0.0725,0.0,0.0725,0.0725,0.0,0.1
+Texas,0.0,0.052,0.0,0.0625,0.0564,0.0,0.3
+Arizona,0.0,0.02,0.0,0.0500,0.0067,0.0,0.1
+Colorado,0.5,0.51,0.0,0.0700,0.0542,0.0,0.4
