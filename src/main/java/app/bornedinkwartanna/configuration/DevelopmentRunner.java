@@ -29,7 +29,7 @@ public class DevelopmentRunner {
         ProductRepository productRepository, StateRepository stateRepository) { // user repo for ease of testing with a built-in user
         return args -> {
 
-            System.out.println( new File("").getAbsolutePath());
+
             ProductCsvReader productCsvReader = new ProductCsvReader();
             List<Product> products = productCsvReader.read(CSV_LOCATION_PATH + "/products.csv");
             for (int i = 0; i < products.size(); i++) {
@@ -39,7 +39,7 @@ public class DevelopmentRunner {
 
 
             StateCsvReader stateCsvReader = new StateCsvReader();
-            List<State> states = stateCsvReader.read(CSV_LOCATION_PATH + "\\states.csv");
+            List<State> states = stateCsvReader.read(CSV_LOCATION_PATH + "/states.csv");
             for (State state : states) {
                 stateRepository.save(state);
             }
