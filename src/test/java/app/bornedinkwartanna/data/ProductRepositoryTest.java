@@ -33,11 +33,13 @@ public class ProductRepositoryTest {
                 .product("sampleProduct1")
                 .category("sampleCategory1")
                 .wholesale_price(0.00)
+                .src_image("")
                 .build();
         sampleProduct2 = Product.builder()
                 .product("sampleProduct2")
                 .category("sampleCategory2")
                 .wholesale_price(0.00)
+                .src_image("")
                 .build();
     }
 
