@@ -1,5 +1,4 @@
 package app.bornedinkwartanna.configuration.csv;
-
 import app.bornedinkwartanna.domain.Product;
 import java.io.*;
 import java.util.ArrayList;

@@ -9,6 +9,7 @@
     <version>2.3.0.RELEASE</version>
     <relativePath/> <!-- lookup parent from repository -->
   </parent>
+
   <groupId>app</groupId>
   <artifactId>bornedinkwartanna</artifactId>
   <version>0.0.1-SNAPSHOT</version>
@@ -88,11 +89,6 @@
       <artifactId>junit</artifactId>
       <scope>test</scope>
     </dependency>
-    <dependency>
-      <groupId>junit</groupId>
-      <artifactId>junit</artifactId>
-      <scope>test</scope>
-    </dependency>
   </dependencies>
 
   <build>
@@ -101,6 +97,33 @@
         <groupId>org.apache.maven.plugins</groupId>
         <artifactId>maven-surefire-plugin</artifactId>
         <version>2.19.1</version>
+      </plugin>
+      <plugin>
+        <groupId>org.springframework.boot</groupId>
+        <artifactId>spring-boot-maven-plugin</artifactId>
+        <version>2.1.5.RELEASE</version>
+        <executions>
+          <execution>
+            <goals>
+              <goal>repackage</goal>
+            </goals>
+          </execution>
+        </executions>
+      </plugin>
+      <plugin>
+        <groupId>com.heroku.sdk</groupId>
+        <artifactId>heroku-maven-plugin</artifactId>
+        <version>3.0.2</version>
+        <configuration>
+          <jdkVersion>1.8</jdkVersion>
+          <!-- Use your own application name (Heroku App name!) -->
+          <appName>taxcalculatorzpibackend</appName>
+          <processTypes>
+            <!-- Tell Heroku how to launch your application -->
+            <web>java -Dserver.port=$PORT $JAVA_OPTS -jar target/bornedinkwartanna-0.0.1-SNAPSHOT.jar</web>
+          </processTypes>
+
+        </configuration>
       </plugin>
     </plugins>
   </build>

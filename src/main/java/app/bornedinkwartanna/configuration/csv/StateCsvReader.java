@@ -39,12 +39,12 @@ public class StateCsvReader implements CsvReaderInterface {
 		return State.builder()
 			.name(elements[0])
 			.groceries(Double.valueOf(elements[1]))
-			.preparedFood(Double.valueOf(elements[1]))
-			.prescriptionDrug(Double.valueOf(elements[2]))
-			.nonPrescriptionDrug(Double.valueOf(elements[3]))
-			.clothing(Double.valueOf(elements[3]))
-			.intangibles(Double.valueOf(elements[4]))
-			.logistics(Double.valueOf(elements[5]))
+			.preparedFood(Double.valueOf(elements[2]))
+			.prescriptionDrug(Double.valueOf(elements[3]))
+			.nonPrescriptionDrug(Double.valueOf(elements[4]))
+			.clothing(Double.valueOf(elements[5]))
+			.intangibles(Double.valueOf(elements[6]))
+			.logistics(Double.valueOf(elements[7]))
 			.build();
 	};
 
